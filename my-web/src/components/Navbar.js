@@ -1,29 +1,35 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import iconClock from './clock.svg'
-
+import user from './user.svg'
 function Navbar(){
     return(
-    <div className="h-screen bg-gradient-to-r from-purple-400 to-red-500">
+    <div >
       <nav className="bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <img className="h-8 w-8" src={iconClock}  alt="Img"/>
+                <img className="h-12 w-12" src={iconClock}  alt="Img"/>
               </div>
               <div className="hidden md:block">
-                <div className="ml-6 flex items-baseline space-x-4">
+                <div className="ml-12 flex items-baseline space-x-4">
                   <Link to="/login" className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium">
                     CHECK-IN
                   </Link>
-
                   <Link to="/login" className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium">
                     CHECK-OUT
                   </Link>
                 </div>
               </div>
-
+            </div>
+            <div className="flex items-center">
+              <Link to = "/profile" className="hover:bg-gray-700 rounded-md px-3 py-2">
+                <img className="h-10 w-12" src={user}  alt="Img"/>
+              </Link>
+              <Link to = "/login" className="hover:bg-gray-700 rounded-md">
+                <div class="text-white inset-0 md:inset-y px-3 py-2">SignOut</div>
+              </Link>
             </div>
             <div className="-mr-2 flex md:hidden">
               <button
@@ -32,7 +38,6 @@ function Navbar(){
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
-
                 <svg
                   className="block h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +79,9 @@ function Navbar(){
             <Link to="/login" className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">
                 CHECK-IN
             </Link>
-
+            <Link to="/login" className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">
+                CHECK-OUT
+            </Link>
           </div>
         </div>
       </nav>
