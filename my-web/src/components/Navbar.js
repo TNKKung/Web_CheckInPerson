@@ -27,9 +27,6 @@ function Navbar(){
               <Link to = "/profile" className="hover:bg-gray-700 rounded-md px-3 py-2">
                 <img className="h-10 w-12" src={user}  alt="Img"/>
               </Link>
-              <Link to = "/login" className="hover:bg-gray-700 rounded-md">
-                <div class="text-white inset-0 md:inset-y px-3 py-2">SignOut</div>
-              </Link>
             </div>
             <div className="-mr-2 flex md:hidden">
               <button

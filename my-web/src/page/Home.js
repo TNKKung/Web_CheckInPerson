@@ -7,7 +7,7 @@ function Home(){
     return(
         <div className="h-screen bg-gradient-to-r from-purple-400 to-red-500">
             <Navbar />
-            <div class="mt-20 font-mono font-black text-7xl text-center "> 
+            <div class="mt-40 font-mono font-black text-9xl text-center "> 
                 <Clock />
             </div>      
         </div>
