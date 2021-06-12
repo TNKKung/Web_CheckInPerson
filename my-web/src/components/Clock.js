@@ -10,7 +10,7 @@ function Clock(){
       }, 1000);
 
     return(
-        <div>
+        <div className="font-mono">
             <h1>{ctime}</h1>
         </div>
     );
