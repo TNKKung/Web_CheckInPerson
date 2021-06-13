@@ -11,7 +11,7 @@ function Navbar() {
             <div className="flex items-center">
               <div className="flex items-center">
                 <Link
-                  to="/home"
+                  to="/"
                   className="hover:bg-gray-700 rounded-md px-3 py-2"
                 >
                   <img className="h-12 w-12" src={iconClock} alt="Img" />
@@ -20,16 +20,28 @@ function Navbar() {
               <div className="hidden md:block">
                 <div className="ml-9 flex items-baseline space-x-4">
                   <Link
-                    to="/home/check-in"
+                    to="/checkIn"
                     className=" hover:bg-gray-700 text-white px-3 py-2 text-xm rounded-md font-mono"
                   >
                     CHECK-IN
                   </Link>
                   <Link
-                    to="/home/check-out"
+                    to="/checkOut"
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-xm font-mono"
                   >
                     CHECK-OUT
+                  </Link>
+                  <Link
+                    to="/listTime"
+                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-xm font-mono"
+                  >
+                    LIST-TIME
+                  </Link>
+                  <Link
+                    to="/listTime"
+                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-xm font-mono"
+                  >
+                    REPORT
                   </Link>
                 </div>
               </div>
@@ -88,13 +100,13 @@ function Navbar() {
         <div className="md:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
-              to="/home/check-in"
+              to="/check-in"
               className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-roboto font-mono"
             >
               CHECK-IN
             </Link>
             <Link
-              to="/home/check-out"
+              to="/check-out"
               className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-toboto font-mono"
             >
               CHECK-OUT

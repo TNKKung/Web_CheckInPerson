@@ -13,6 +13,7 @@ export default function Profile() {
     Mobile_Number: "0640630406",
     Email: "tomkabtokom@gmail.com",
   };
+
   return (
     <div className="h-screen bg-gradient-to-r from-purple-500 to-red-500">
       <Navbar />

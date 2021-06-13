@@ -15,7 +15,7 @@ export default function Index() {
         </div>
         <div action="" class="mt-5 flex flex-col lg:w-1/2 w-8/12">
           <Link
-            to="/home/check-in"
+            to="/check-in"
             class="bg-green-500 py-4 text-center px-17 md:px-1 md:py-4 text-white rounded leading-tight text-xl md:text-base font-mono mt-4 mb-20"
           >
             CHECK-IN

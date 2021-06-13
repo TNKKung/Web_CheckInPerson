@@ -44,7 +44,7 @@ export default function Login() {
             Forget Password ?
           </Link>
           <Link
-            to="/home"
+            to="/"
             class="bg-blue-500 py-4 text-center px-17 md:px-1 md:py-4 text-white rounded leading-tight text-xl md:text-base font-mono mt-4 mb-20"
           >
             Sign-In
