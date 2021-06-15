@@ -20,25 +20,25 @@ function Navbar() {
               <div className="hidden md:block">
                 <div className="ml-9 flex items-baseline space-x-4">
                   <Link
-                    to="/checkIn"
+                    to="/checkin"
                     className=" hover:bg-gray-700 text-white px-3 py-2 text-xm rounded-md font-mono"
                   >
                     CHECK-IN
                   </Link>
                   <Link
-                    to="/checkOut"
+                    to="/checkout"
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-xm font-mono"
                   >
                     CHECK-OUT
                   </Link>
                   <Link
-                    to="/listTime"
+                    to="/listtime"
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-xm font-mono"
                   >
                     LIST-TIME
                   </Link>
                   <Link
-                    to="/listTime"
+                    to="/listtime"
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-xm font-mono"
                   >
                     REPORT

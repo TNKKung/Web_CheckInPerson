@@ -3,8 +3,9 @@ import Image from "./user.svg";
 import { Link } from "react-router-dom";
 
 export default function Login() {
+
   return (
-    <div class="h-screen bg-gradient-to-r from-purple-500 to-red-500 flex ">
+    <div class="h-screen bg-gradient-to-r from-purple-500 to-red-500 flex " style={{}}>
       <div class="mt-20 flex-col flex ml-auto mr-auto items-center w-full lg:w-2/3 md:w-3/5">
         <img src={Image} width="200" alt="img" class="mb-5" />
         <form action="" class="mt-7 flex flex-col lg:w-1/2 w-8/12">
