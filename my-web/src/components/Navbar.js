@@ -38,7 +38,7 @@ function Navbar() {
                     LIST-TIME
                   </Link>
                   <Link
-                    to="/listtime"
+                    to="/report"
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-xm font-mono"
                   >
                     REPORT
