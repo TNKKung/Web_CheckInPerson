@@ -14,8 +14,12 @@ export default function Index() {
     Mobile_Number: "0640630406",
     Email: "tomkabtokom@gmail.com",
   };
+  const checkTime = () => {
+    const time = new Date().toLocaleTimeString();
+    console.log(time);
+  };
   return (
-    <div className="h-screen bg-gradient-to-r from-purple-500 to-red-500">
+    <div className="">
       <Navbar />
       <div className="relative sm:max-w-sm sm:mx-auto mt-7 shadow-2xl">
         <div className="bg-gray-200 rounded-lg font-mono">
@@ -38,8 +42,9 @@ export default function Index() {
         </div>
         <div action="" class="mt-5 flex flex-col lg:w-1/2 w-8/12">
           <Link
-            to="/profile"
+            to="/"
             class="bg-green-500 py-4 text-center px-17 md:px-1 md:py-4 text-white rounded leading-tight text-xl md:text-base font-mono mt-4 mb-20"
+            onClick={()=>{checkTime()}}
           >
             CHECK-IN
           </Link>

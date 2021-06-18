@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import iconClock from "./clock.svg";
+import iconClock from "./clock.png";
 import user from "./user.svg";
 function Navbar() {
   return (
-    <div>
+    <div className="">
       <nav className="bg-gray-800">
         <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
@@ -14,7 +14,7 @@ function Navbar() {
                   to="/"
                   className="hover:bg-gray-700 rounded-md px-3 py-2"
                 >
-                  <img className="h-12 w-12" src={iconClock} alt="Img" />
+                  <img className="h-11 w-11" src={iconClock} alt="Img" />
                 </Link>
               </div>
               <div className="hidden md:block">

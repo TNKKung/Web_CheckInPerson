@@ -11,7 +11,7 @@ function App() {
     return(
       <Switch>
         <div>
-          <Route exact path="/" component={Index}/>
+          <Route exact path="/" component={Index}></Route>
           <Route exact path="/login" component={Login}/>
           <Route exact path="/profile" component={Profile}/>
           <Route exact path="/checkin" component={CheckIn}/>

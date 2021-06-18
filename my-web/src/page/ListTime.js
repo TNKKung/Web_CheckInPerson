@@ -100,7 +100,7 @@ export default function ListTime() {
         {data.listTime.map((item) => {
           return (
             <tbody className="">
-              <tr className="bg-gradient-to-r from-purple-500 border-4 border-gray-300 text-center">
+              <tr className="bg-white border-4 border-purple-500 rounded-lg text-center">
                 <td className="ml-2 font-semibold">{item.date}</td>
                 <td>
                   <span className="text-center ml-2 font-semibold">

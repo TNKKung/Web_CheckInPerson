@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function Index() {
   
   return (
-    <div className="h-screen bg-gradient-to-r from-purple-500 to-red-500">
+    <div className="">
       <Navbar />
       <div class="mt-40 flex-col flex ml-auto mr-auto items-center w-full lg:w-2/3 md:w-3/5">
         <div class="mt-10 font-mono font-black text-9xl text-center ">

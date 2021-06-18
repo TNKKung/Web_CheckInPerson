@@ -15,7 +15,7 @@ export default function Profile() {
   };
 
   return (
-    <div className="h-screen bg-gradient-to-r from-purple-500 to-red-500">
+    <div className="">
       <Navbar />
       <div className="mt-7 items-center flex flex-col">
         <img

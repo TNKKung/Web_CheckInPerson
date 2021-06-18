@@ -1,11 +1,26 @@
-import React from "react";
+import React,{useState} from "react";
 import Image from "./user.svg";
-import { Link } from "react-router-dom";
+import { Link,useHistory } from "react-router-dom";
 
 export default function Login() {
+  const history = useHistory()
+  const [id,setId] = useState("")
+  const [password,setPassword] = useState("")
+  const dataId = {
+    id : "62010293",
+    password : "Tom0640630406"
+  }
+  const checkPassword = () => {
+    if(id === dataId.id && password === dataId.password){
+      history.push("/")
+    }
+    else{
+      alert("Error")
+    }
+  }
 
   return (
-    <div class="h-screen bg-gradient-to-r from-purple-500 to-red-500 flex " style={{}}>
+    <div class="" >
       <div class="mt-20 flex-col flex ml-auto mr-auto items-center w-full lg:w-2/3 md:w-3/5">
         <img src={Image} width="200" alt="img" class="mb-5" />
         <form action="" class="mt-7 flex flex-col lg:w-1/2 w-8/12">
@@ -19,6 +34,9 @@ export default function Login() {
               type="text"
               class="flex-shrink flex-grow leading-normal w-px border-0 h-10 border-grey-light rounded rounded-l-none px-3 self-center relative  font-mono text-xl outline-none"
               placeholder="Username"
+              onChange={(e)=>{
+                setId(e.target.value)
+              }}
             />
           </div>
           <div class="flex flex-wrap w-full relative h-15 bg-white rounded mb-4">
@@ -31,6 +49,9 @@ export default function Login() {
               type="password"
               class="flex-shrink flex-grow leading-normal w-px flex-1 border-0 h-10 px-3 relative self-center font-mono text-xl outline-none"
               placeholder="Password"
+              onChange={(e)=>{
+                setPassword(e.target.value)
+              }}
             />
             <div class="flex -mr-px">
               <span class="flex items-center leading-normal bg-white rounded rounded-l-none border-0 px-3 whitespace-no-wrap text-gray-600">
@@ -44,12 +65,12 @@ export default function Login() {
           >
             Forget Password ?
           </Link>
-          <Link
-            to="/"
+          <button
             class="bg-blue-500 py-4 text-center px-17 md:px-1 md:py-4 text-white rounded leading-tight text-xl md:text-base font-mono mt-4 mb-20"
+            onClick={()=>{checkPassword()}}
           >
             Sign-In
-          </Link>
+          </button>
         </form>
       </div>
     </div>
